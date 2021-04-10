@@ -99,6 +99,7 @@ class HECryproModule {
         return (PublicKey(context: context, pk0: pk0, pk1: pk1, evaluationKey: evalKey), PrivateKey(sk: s))
     }
     
+    
     func encrypt(message: Int, with publickey: PublicKey) -> EncryptedInteger {
         let u = createPolynomial(of: self.degree, with: distribution) %% self.context.parameter_q
         
