@@ -32,6 +32,7 @@
 		E0C62D1926163E45009A0649 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0C62D1C26163E45009A0649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0C62D1E26163E45009A0649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0DB59FD2622364500538AD4 /* SwiftHECrypto */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftHECrypto; path = SwiftHECryptoPackage/SwiftHECrypto; sourceTree = "<group>"; };
 		E0DE343A2620DAC200049C03 /* MathOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathOperations.swift; sourceTree = "<group>"; };
 		E0F94206261B6814007362CD /* LWZcompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWZcompression.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,6 +51,7 @@
 		E0C62D0426163E44009A0649 = {
 			isa = PBXGroup;
 			children = (
+				E0DB59FD2622364500538AD4 /* SwiftHECrypto */,
 				E0C62D0F26163E44009A0649 /* IntegerHomomorphicEncryption */,
 				E0C62D0E26163E44009A0649 /* Products */,
 			);
