@@ -17,29 +17,29 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    let helib = HECryproModule()
+    let heModule = HECryproModule()
     
     @IBAction func clicked(_ sender: Any) {
         
-        let (pk, sk) = helib.createKeypair()
+        let (pk, sk) = heModule.createKeypair()
         
-        let enc1 = helib.encrypt(message: 20, with: pk)
+        let enc1 = heModule.encrypt(message: 20, with: pk)
         
-        let enc2 = helib.encrypt(message: 3, with: pk)
+        let enc2 = heModule.encrypt(message: 3, with: pk)
         
-        let enc3 = helib.encrypt(message: 2, with: pk)
+        let enc3 = heModule.encrypt(message: 2, with: pk)
         
-        if let erg = enc1.add(value: enc2)?.mult(value: enc3, with: pk) {
+        if let erg = (enc1 + enc2)?.mult(value: enc3, with: pk) {
             
-            let dec = helib.decrypt(cipher: erg, with: sk)
+            let dec = heModule.decrypt(cipher: erg, with: sk)
             
             print("\(dec)")
             
         }
         
-        let message = helib.encrypt(message: "hallo world!", with: pk)
+        let message = heModule.encrypt(message: "hallo world!", with: pk)
         
-        if let dec_mes = helib.decrypt(cipher: message, with: sk) {
+        if let dec_mes = heModule.decrypt(cipher: message, with: sk) {
             print(dec_mes)
         }
 
